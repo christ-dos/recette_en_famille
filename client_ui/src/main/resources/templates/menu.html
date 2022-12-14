@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Menu de la semaine</title>
+</head>
+<body>
+    <div id="entete">
+        <img src="./images/mosaïque-portugaise-de-mosaïques-style-azulejo-en-céramique-bannière-graphique-motif-portugal-traditionnel-tourisme-portugais-165786962.jpg" alt="azulejos">
+    </div>
+    <section id="titre">
+        <h1>Recette De Famille</h1>
+    </section>
+
+    <section id="premiere">
+        <form action="">
+            <div id="jour">
+                <select name="jour" id="jour-select">
+                    <option value="">--Merci de selectionner un jour--</option>
+                    <option value="lundi">LUNDI</option>
+                    <option value="mardi">MARDI</option>
+                    <option value="mercredi">MERCREDI</option>
+                    <option value="jeudi">JEUDI</option>
+                    <option value="vendredi">VENDREDI</option>
+                    <option value="samedi">SAMEDI</option>
+                    <option value="dimanche">DIMANCHE</option>
+                </select>
+            </div>
+            <br>
+            <div id="heure">
+                <select name="heure" id="heure-select">
+                    <option value="">--Merci de selectionner un repas--</option>
+                    <option value="dejeuner">DEJEUNER</option>
+                    <option value="diner">DINER</option>
+                </select>
+            </div>
+            <br>
+            <div id="barrederecherche">
+                <input id="searchbar" onkeyup="search_recette()" type="text"
+                name="search" placeholder="rechercher une recette...">
+            </div>
+            <br>
+            <div id="bouton">
+                <button type="submit" name="submit" id="button">Ajouter au menu</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section id="tab">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="dej">DEJEUNER</th>
+                    <th class="diner">DINER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="lundi">
+                    <td>LUNDI</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="mardi">
+                    <td >MARDI</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="mercredi">
+                    <td>MERCREDI</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="jeudi">
+                    <td>JEUDI</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="vendredi">
+                    <td>VENDREDI</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="samedi">
+                    <td>SAMEDI</td>
+                    <td>
+                        <div class="recette">
+                            <h1>Poulet Roti</h1>
+                            <img src="./images/poulet.jpeg" alt="poulet">
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class="dimanche">
+                    <td>DIMANCHE</td>
+                    <td>
+                        <div class="recette">
+                            <h1>Poulet Roti</h1>
+                            <img src="./images/poulet.jpeg" alt="poulet">
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+    
+           
+        </table>
+    </section>
+
+
+
+
+    <section id="footer">
+        <p>mentions légales</p>
+        <p>site crée par Christine Dos Santos, Amandine Pesquet et Kelly Ribeiro</p>
+        <p>nous contacter</p>
+    </section>
+</body>
+</html>
