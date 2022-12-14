@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/client_ui/client_ui.iml" filepath="$PROJECT_DIR$/client_ui/client_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../planification_repas/microservice_planification_repas.iml" filepath="$PROJECT_DIR$/../planification_repas/microservice_planification_repas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/recette_en_famille.iml" filepath="$PROJECT_DIR$/.idea/recette_en_famille.iml" />
     </modules>
   </component>
