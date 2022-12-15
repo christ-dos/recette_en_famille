@@ -4,7 +4,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/client_ui/pom.xml" />
-        <option value="$PROJECT_DIR$/../planification_repas/pom.xml" />
         <option value="$PROJECT_DIR$/livre_recette/pom.xml" />
         <option value="$PROJECT_DIR$/planification_repas/pom.xml" />
       </list>

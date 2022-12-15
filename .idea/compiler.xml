@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client_ui" />
         <module name="livre_recette" />
-        <module name="microservice_planification_repas" />
         <module name="planification_repas" />
       </profile>
     </annotationProcessing>
