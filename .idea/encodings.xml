@@ -4,6 +4,10 @@
     <file url="file://$PROJECT_DIR$/client_ui/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client_ui/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livre_recette/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livre_recette/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/planification_repas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/planification_repas/src/main/resources" charset="UTF-8" />
+    <file url="file://$USER_HOME$/git/recette_en_famille/client_ui/src/main/java" charset="UTF-8" />
+    <file url="file://$USER_HOME$/git/recette_en_famille/livre_recette/src/main/java" charset="UTF-8" />
   </component>
 </project>

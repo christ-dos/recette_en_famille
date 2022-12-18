@@ -29,20 +29,31 @@ public class JourPeriodeService {
     }
 
     public List<JourPeriode> rechercherTousLesJoursPeriodes() {
-        log.info("Service: Obtenir la liste des jours/periodes");
+        log.info("Service - Obtenir la liste des jours/periodes");
         return (List<JourPeriode>) jourPeriodeRepository.findAll();
 
     }
+    // Todo faire une methode getJourPeriodeByJourId&PeriodeId()
 
     public JourPeriode ajouterJourPeriode(JourPeriode jourPeriode) {
-        JourPeriode jourPeriodeEnregistrer = jourPeriodeRepository.save(jourPeriode);
-        log.debug("Service: JourPeriode ajouté avec ID: " + jourPeriodeEnregistrer.getJourPeriodeId());
-        return jourPeriodeEnregistrer;
+        //Todo: rechercher si le jourPeriode existe grace a la methode getJourPeriode
+        // et di oui verifier si titre et image sont vide si oui ajouter sino msg erreur
+        // jour Periode existe deja
+
+        JourPeriode jourPeriodeEnregistre = jourPeriodeRepository.save(jourPeriode);
+        log.debug("Service - JourPeriode ajouté avec ID: " + jourPeriodeEnregistre.getJourPeriodeId());
+        return jourPeriodeEnregistre;
     }
 
     public void effacerToutesLesRecettesPlanning() {
+    List<JourPeriode> JourPeriodes = (List<JourPeriode>) jourPeriodeRepository.findAll();
 
-        log.info("Service: Planning effacé...");
+    for (JourPeriode jourPeriode:JourPeriodes) {
+        jourPeriode.setTitreRecette(null);
+        jourPeriode.setPhoto(null);
+        jourPeriodeRepository.save(jourPeriode);
+    }
+    log.info("Service: Planning effacé...");
     }
 
 }

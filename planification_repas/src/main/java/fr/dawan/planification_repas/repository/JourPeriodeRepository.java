@@ -13,6 +13,6 @@ import fr.dawan.planification_repas.model.JourPeriodeId;
  * @author Amandine Pesquet
  * @author Christine Dos Santos
  */
-public interface JourPeriodeRepository extends CrudRepository<JourPeriode, JourPeriodeId> {
+public interface JourPeriodeRepository extends CrudRepository<JourPeriode, Integer> {
 
 }

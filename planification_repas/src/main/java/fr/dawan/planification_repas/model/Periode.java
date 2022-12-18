@@ -33,7 +33,7 @@ public class Periode implements Serializable {
     private int id;
 
     @Version
-    private int vesion;
+    private int version;
 
     @Column(length = 10, unique = true)
     private String periode;
@@ -75,7 +75,7 @@ public class Periode implements Serializable {
 
     @Override
     public String toString() {
-        return "Periode [id=" + id + ", vesion=" + vesion + ", periode=" + periode + "]";
+        return "Periode [id=" + id + ", vesion=" + version + ", periode=" + periode + "]";
     }
 
 }

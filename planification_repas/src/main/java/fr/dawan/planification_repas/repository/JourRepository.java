@@ -14,4 +14,5 @@ import fr.dawan.planification_repas.model.Jour;
 public interface JourRepository extends CrudRepository<Jour, Integer> {
     Jour findByJour(String jour);
 
+
 }

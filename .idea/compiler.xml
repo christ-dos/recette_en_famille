@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="planification_repas" />
         <module name="client_ui" />
         <module name="livre_recette" />
-        <module name="planification_repas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client_ui" target="17" />
+      <module name="client_ui (1)" target="17" />
+      <module name="client_ui (2)" target="17" />
       <module name="livre_recette" target="17" />
       <module name="microservice_planification_repas" target="17" />
       <module name="planification_repas" target="17" />
@@ -22,6 +24,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client_ui" options="-parameters" />
+      <module name="client_ui (1)" options="-parameters" />
+      <module name="client_ui (2)" options="-parameters" />
       <module name="livre_recette" options="-parameters" />
       <module name="microservice_planification_repas" options="-parameters" />
       <module name="planification_repas" options="-parameters" />

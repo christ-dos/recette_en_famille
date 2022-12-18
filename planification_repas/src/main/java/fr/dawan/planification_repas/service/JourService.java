@@ -29,7 +29,7 @@ public class JourService {
     }
 
     public List<Jour> rechercherTousLesJours() {
-        log.info("Service: Obtenir la liste des jours");
+        log.info("Service - Obtenir la liste des jours");
 
         return (List<Jour>) jourRepository.findAll();
 
@@ -41,7 +41,7 @@ public class JourService {
 
         if (jour.getId() == 0 || jourRecherché == null) {
             jourEnregistrer = jourRepository.save(jour);
-            log.debug("Service: Jour ajouté avec ID: " + jour.getId());
+            log.debug("Service - Jour ajouté avec ID: " + jour.getId());
         }
         return jourEnregistrer;
     }

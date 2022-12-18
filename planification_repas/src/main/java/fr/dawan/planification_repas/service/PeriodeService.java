@@ -29,7 +29,7 @@ public class PeriodeService {
     }
 
     public List<Periode> rechercherToutesLesPeriodes() {
-        log.info("Service: Obtenir la liste des periodes");
+        log.info("Service - Obtenir la liste des periodes");
         return (List<Periode>) periodeRepository.findAll();
 
     }
@@ -40,7 +40,7 @@ public class PeriodeService {
 
         if (periode.getId() == 0 || periodeRecherché == null) {
             periodeEnregistrer = periodeRepository.save(periode);
-            log.debug("Service: Periode ajouté avec ID: " + periodeEnregistrer.getId());
+            log.debug("Service - Periode ajouté avec ID: " + periodeEnregistrer.getId());
         }
         return periodeEnregistrer;
     }
