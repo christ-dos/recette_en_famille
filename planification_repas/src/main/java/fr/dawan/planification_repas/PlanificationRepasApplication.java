@@ -40,20 +40,24 @@ public class PlanificationRepasApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Jour lundi = new Jour("Lundi");
-        lundi.setId(1);
+        //lundi.setId(1);
         Jour mercredi = new Jour("Mercredi");
-        mercredi.setId(3);
+        //mercredi.setId(3);
+
+        Jour jeudi= new Jour("Jeudi");
 
         Periode dejeuner = new Periode("dejeuner");
-        dejeuner.setId(1);
+        //dejeuner.setId(1);
 
         Periode dinner = new Periode("dinner");
         dinner.setId(2);
 
         JourPeriode jourPeriode1 = new JourPeriode(lundi, dejeuner, "poulet Champignons", null);
         JourPeriode jourPeriode2 = new JourPeriode(lundi, dinner, "poulet basquaise", null);
+        JourPeriode jourPeriode3 = new JourPeriode(jeudi, dejeuner, "poulet Champignons", null);
         lundi.ajouterJourPeriode(jourPeriode1);
         lundi.ajouterJourPeriode(jourPeriode2);
+        jeudi.ajouterJourPeriode(jourPeriode3);
         //mercredi.ajouterJourPeriode(jourPeriode1);
         //mercredi.ajouterJourPeriode(jourPeriode2);
        // System.out.println("lundi periodes: " + lundi.getJourPeriodes());
@@ -63,6 +67,7 @@ public class PlanificationRepasApplication implements CommandLineRunner {
         periodeService.ajouterJourPeriode(dinner);
         jourService.ajouterJour(lundi);
         jourService.ajouterJour(mercredi);
+        jourService.ajouterJour(jeudi);
 
 //        System.out.println(jourService.rechercherTousLesJours());
 //        System.out.println();

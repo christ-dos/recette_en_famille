@@ -37,7 +37,7 @@ public class Jour implements Serializable {
     private int id;
 
     @Version
-    private int vesion;
+    private int version;
 
     @Column(length = 10, unique = true)
     private String jour;
@@ -58,8 +58,8 @@ public class Jour implements Serializable {
         this.id = id;
     }
 
-    public int getVesion() {
-        return vesion;
+    public int getVersion() {
+        return version;
     }
 
     public List<JourPeriode> getJourPeriodes() {
@@ -70,8 +70,8 @@ public class Jour implements Serializable {
         JourPeriodes = jourPeriodes;
     }
 
-    public void setVesion(int vesion) {
-        this.vesion = vesion;
+    public void setVersion(int version) {
+        this.version = version;
     }
 
     public String getJour() {
@@ -93,7 +93,7 @@ public class Jour implements Serializable {
 
     @Override
     public String toString() {
-        return "Jour [id=" + id + ", vesion=" + vesion + ", jour=" + jour + "]";
+        return "Jour [id=" + id + ", version=" + version + ", jour=" + jour + "]";
     }
 
 }
